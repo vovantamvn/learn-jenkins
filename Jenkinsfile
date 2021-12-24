@@ -9,13 +9,13 @@ pipeline {
     stages {
       stage('Deploy') {
           steps {
-            terraform init .
+            sh 'terraform init .'
           }
       }
 
       stage('Destroy') {
           steps {
-            terraform init .
+            sh 'terraform init .'
           }
       }   
     }
